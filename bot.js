@@ -55,8 +55,9 @@ This bot demonstrates many of the core features of Botkit:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-
+require('dotenv').config();
 if (!process.env.token) {
+    console.log(process.env);
     console.log('Error: Specify token in environment');
     process.exit(1);
 }
